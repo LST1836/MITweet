@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from parameter import parse_relevance_args
-args = parse_relevance_args()  # 加载参数
+args = parse_relevance_args()  # load parameters
 
 import os
 os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu_ids
@@ -19,7 +19,7 @@ from load_data import load_data_r
 from TweetNormalizer import normalizeTweet
 
 
-# 设置随机数种子
+# setup seed
 def setup_seed(seed):
     np.random.seed(seed)
     torch.manual_seed(seed)
@@ -27,12 +27,11 @@ def setup_seed(seed):
     torch.cuda.manual_seed_all(seed)
     torch.backends.cudnn.benchmark = False
     torch.backends.cudnn.deterministic = True
-    # torch.backends.cudnn.enabled = False   # RTX 3070
 
 
 setup_seed(args.seed)
 
-torch.cuda.empty_cache()  # 清除GPU缓存
+torch.cuda.empty_cache()
 
 # logger
 logging.basicConfig(format='%(message)s', level=logging.INFO,
@@ -144,9 +143,9 @@ def evaluate(texts, labels, task='Val'):
              f"global_f1={results['global_f1']:.4f}, global_p={results['global_p']:.4f}, global_r={results['global_r']:.4f}, "
              f"acc={results['acc']}, f1={results['f1']}, p={results['p']}, r={results['r']}")
 
-    pred = torch.where(torch.sigmoid(logits_epoch) > 0.5, 1, 0)
-    pred = np.array(pred)
-    np.save('relevance_preds.npy', pred)
+    # pred = torch.where(torch.sigmoid(logits_epoch) > 0.5, 1, 0)
+    # pred = np.array(pred)
+    # np.save('relevance_preds.npy', pred)
 
     net.train()
 

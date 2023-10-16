@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from parameter import parse_ideology_args
-args = parse_ideology_args()  # 加载参数
+args = parse_ideology_args()  # load parameters
 
 import os
 os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu_ids
@@ -19,7 +19,7 @@ from load_data import load_data_i
 from TweetNormalizer import normalizeTweet
 
 
-# 设置随机数种子
+# setup seed
 def setup_seed(seed):
     np.random.seed(seed)
     torch.manual_seed(seed)
@@ -27,12 +27,11 @@ def setup_seed(seed):
     torch.cuda.manual_seed_all(seed)
     torch.backends.cudnn.benchmark = False
     torch.backends.cudnn.deterministic = True
-    # torch.backends.cudnn.enabled = False   # RTX 3070
 
 
 setup_seed(args.seed)
 
-torch.cuda.empty_cache()  # 清除GPU缓存
+torch.cuda.empty_cache()
 
 # logger
 logging.basicConfig(format='%(message)s', level=logging.INFO,
