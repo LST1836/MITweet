@@ -20,7 +20,7 @@ Based on the schema, we construct a new high-quality dataset, **MITweet**, for a
 
 ### Label Distribution
 
-<img src="pics/label distribution.png" alt="Label Distribution of MITweet" title="Label Distribution of MITweet" style="zoom:70%;" />
+<img src="pics/label distribution.png" alt="Label Distribution of MITweet" title="Label Distribution of MITweet" width="700" />
 
 ## Baselines
 
@@ -31,11 +31,11 @@ we develop baselines for the new MID task based on three widely-used PLMs (BERT,
 
 ### In-topic Setting
 
-<img src="pics/results_in-topic.png" alt="results_in-topic" title="results_in-topic" style="zoom:70%;" />
+<img src="pics/results_in-topic.png" alt="results_in-topic" title="results_in-topic" width="450" />
 
 ### Cross-topic Setting
 
-<img src="pics/results_cross-topic.png" alt="results_cross-topic" title="results_cross-topic" style="zoom:70%;" />
+<img src="pics/results_cross-topic.png" alt="results_cross-topic" title="results_cross-topic" width="450" />
 
 ## Reproduce
 
