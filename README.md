@@ -10,9 +10,9 @@ The multifaceted ideology schema contains **five domains** that reflect differen
 
 <center><p>Multifaceted Ideology Schema</p></center>
 
-<img src="pics/schema.png" alt="Multifaceted Ideology Schema" title="Illustration of Multifaceted Ideology Schema" style="zoom:40%;" />
+<img src="pics/schema.png" alt="Multifaceted Ideology Schema" title="Illustration of Multifaceted Ideology Schema" width="600" />
 
-<center><p>Illustration of Multifaceted Ideology Schema</p></center>
+<p align="center">Illustration of Multifaceted Ideology Schema</p>
 
 ## The MITweet Dataset
 
