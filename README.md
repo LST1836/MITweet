@@ -35,7 +35,7 @@ we develop baselines for the new MID task based on three widely-used PLMs (BERT,
 
 ### Cross-topic Setting
 
-<img src="pics/results_cross-topic.png" alt="results_cross-topic" title="results_cross-topic" width="450" />
+<img src="pics/results_cross-topic.png" alt="results_cross-topic" title="results_cross-topic" style="zoom:70%;" />
 
 ## Reproduce
 
