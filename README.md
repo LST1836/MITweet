@@ -6,11 +6,11 @@ Ideology Takes Multiple Looks: A High-Quality Dataset for Multifaceted Ideology 
 
 The multifaceted ideology schema contains **five domains** that reflect different aspects of society. Under the five domains, there are **twelve facets** with ideological attributes of left- and right-leaning.
 
-<img src="pics/schema_table.png" alt="Multifaceted Ideology Schema" title="Multifaceted Ideology Schema" style="zoom:60%;" />
+<p align="center"><img src="pics/schema_table.png" alt="Multifaceted Ideology Schema" title="Multifaceted Ideology Schema" width="700" /></p>
 
-<center><p>Multifaceted Ideology Schema</p></center>
+<p align="center">Multifaceted Ideology Schema</p>
 
-<img src="pics/schema.png" alt="Multifaceted Ideology Schema" title="Illustration of Multifaceted Ideology Schema" width="600" />
+<p align="center"><img src="pics/schema.png" alt="Multifaceted Ideology Schema" title="Illustration of Multifaceted Ideology Schema" width="500" /></p>
 
 <p align="center">Illustration of Multifaceted Ideology Schema</p>
 
